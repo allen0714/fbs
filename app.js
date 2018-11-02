@@ -5,8 +5,10 @@ const app = new Koa();
 const router = new Router();
 
 router.get('/', (ctx) => {
-    ctx.body = 'hello from koa using koa router~';
+    ctx.body = 'Hi there, this is fbs';
 });
+
+router.get('/home', ctx => ctx.body = 'this is home');
 
 app.use(router.routes());
 

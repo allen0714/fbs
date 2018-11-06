@@ -12,4 +12,5 @@ router.get('/home', ctx => ctx.body = 'this is home');
 
 app.use(router.routes());
 
+console.info('-----------------app started~----------------------');
 app.listen(3000);
